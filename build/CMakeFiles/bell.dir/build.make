@@ -73,15 +73,15 @@ CMakeFiles/bell.dir/bell.c.o: CMakeFiles/bell.dir/flags.make
 CMakeFiles/bell.dir/bell.c.o: /home/dario/learning/quantum/bell.c
 CMakeFiles/bell.dir/bell.c.o: CMakeFiles/bell.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/learning/quantum/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bell.dir/bell.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bell.dir/bell.c.o -MF CMakeFiles/bell.dir/bell.c.o.d -o CMakeFiles/bell.dir/bell.c.o -c /home/dario/learning/quantum/bell.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bell.dir/bell.c.o -MF CMakeFiles/bell.dir/bell.c.o.d -o CMakeFiles/bell.dir/bell.c.o -c /home/dario/learning/quantum/bell.c
 
 CMakeFiles/bell.dir/bell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bell.dir/bell.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dario/learning/quantum/bell.c > CMakeFiles/bell.dir/bell.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dario/learning/quantum/bell.c > CMakeFiles/bell.dir/bell.c.i
 
 CMakeFiles/bell.dir/bell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bell.dir/bell.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dario/learning/quantum/bell.c -o CMakeFiles/bell.dir/bell.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dario/learning/quantum/bell.c -o CMakeFiles/bell.dir/bell.c.s
 
 # Object files for target bell
 bell_OBJECTS = \
