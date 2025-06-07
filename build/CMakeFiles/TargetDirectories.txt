@@ -1,3 +1,0 @@
-/home/dario/learning/quantum/build/CMakeFiles/bell.dir
-/home/dario/learning/quantum/build/CMakeFiles/edit_cache.dir
-/home/dario/learning/quantum/build/CMakeFiles/rebuild_cache.dir

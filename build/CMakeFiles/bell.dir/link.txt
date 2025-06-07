@@ -1,1 +1,0 @@
-/usr/bin/gcc -g CMakeFiles/bell.dir/bell.c.o -o bell   -L/usr/local/cuda-12.6/targets/x86_64-linux/lib  -Wl,-rpath,/usr/local/cuda-12.6/targets/x86_64-linux/lib /usr/local/cuda-12.6/targets/x86_64-linux/lib/libcudart.so -lcustatevec 
