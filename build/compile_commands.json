@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/dario/learning/quantum/build",
+  "command": "/usr/bin/cc  -isystem /usr/local/cuda-12.6/targets/x86_64-linux/include -g -o CMakeFiles/bell.dir/bell.c.o -c /home/dario/learning/quantum/bell.c",
+  "file": "/home/dario/learning/quantum/bell.c",
+  "output": "CMakeFiles/bell.dir/bell.c.o"
+}
+]
