@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.18)
 # Define a variable for the project name
-set(PROJECT_NAME walk_particle)
+set(PROJECT_NAME bell)
 
 project(${PROJECT_NAME} VERSION 0.1.0 LANGUAGES C CUDA)
 
@@ -10,7 +10,7 @@ find_package(CUDAToolkit REQUIRED)
 # Location of libcustatevec.so
 link_directories(/usr/local/cuda-12.6/targets/x86_64-linux/lib)
 
-add_executable(${PROJECT_NAME} walk.cu)
+add_executable(${PROJECT_NAME} bell.c)
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE ${CUDAToolkit_INCLUDE_DIRS}
