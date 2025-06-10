@@ -74,8 +74,9 @@ int main(){
             position += 1;  // "1" → move right
         }
 
-        printf("Step %2d: coin=(%.3f,%.3f)  r=%.3f  → pos=%d\n",
+        printf("Step %2d: P0 %.3f coin=(%.3f,%.3f)  r=%.3f  → pos=%d\n",
                step,
+               p0,
                cuCreal(h_sv[0]), cuCimag(h_sv[0]),
                r, position);
     }
