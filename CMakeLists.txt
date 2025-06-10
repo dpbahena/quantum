@@ -10,7 +10,7 @@ find_package(CUDAToolkit REQUIRED)
 # Location of libcustatevec.so
 link_directories(/usr/local/cuda-12.6/targets/x86_64-linux/lib)
 
-add_executable(${PROJECT_NAME} bell.c)
+add_executable(${PROJECT_NAME} bell5.c)
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE ${CUDAToolkit_INCLUDE_DIRS}
