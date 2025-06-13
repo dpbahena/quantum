@@ -134,6 +134,12 @@ find_package(CUDAToolkit REQUIRED)
 
 add_executable(${PROJECT_NAME} first_contraction.cpp)
 
+set_target_properties(contraction PROPERTIES
+  BUILD_WITH_INSTALL_RPATH    TRUE
+  INSTALL_RPATH               "/usr/local/cuda-12.6/targets/x86_64-linux/lib"
+  INSTALL_RPATH_USE_LINK_PATH FALSE
+)
+
 target_link_libraries(${PROJECT_NAME}
   PRIVATE
     CUDA::cudart
