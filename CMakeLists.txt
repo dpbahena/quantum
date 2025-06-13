@@ -114,11 +114,12 @@
 
 
 cmake_minimum_required(VERSION 3.18)
-project(contraction LANGUAGES CXX CUDA)
+project(cudensity LANGUAGES CXX CUDA)
 
 # 1) Tell CMake where to find cuTENSOR headers & libs
 set(CUTENSOR_ROOT /usr/local/cutensor)
 include_directories(${CUTENSOR_ROOT}/include)
+set(CUQUANTUM_ROOT /usr/local/cuquantum)
 
 # 2) Find cuTENSOR -- this will pick up libcutensor.so
 find_library(CUTENSOR_LIB
@@ -132,9 +133,9 @@ endif()
 # 3) Also pull in the CUDA runtime
 find_package(CUDAToolkit REQUIRED)
 
-add_executable(${PROJECT_NAME} first_contraction.cpp)
+add_executable(${PROJECT_NAME} cudensitymat.cpp)
 
-set_target_properties(contraction PROPERTIES
+set_target_properties(${PROJECT_NAME} PROPERTIES
   BUILD_WITH_INSTALL_RPATH    TRUE
   INSTALL_RPATH               "/usr/local/cuda-12.6/targets/x86_64-linux/lib"
   INSTALL_RPATH_USE_LINK_PATH FALSE
@@ -144,6 +145,8 @@ target_link_libraries(${PROJECT_NAME}
   PRIVATE
     CUDA::cudart
     ${CUTENSOR_LIB}
+    # cuDensityMat library
+    ${CUQUANTUM_ROOT}/lib/libcudensitymat.so
 )
 
 # 4) Ensure the loader can find it at runtime
